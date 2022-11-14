@@ -1,65 +1,11 @@
-@import url(./assets/assets/css/fontawesome-all.min.css);
-
-.App {
-  text-align: center;
-  box-sizing: border-box;
-  top: 0;
-  right: 0;
-  left: 0;
-}
-
-.App-logo {
-  height: 15vmin;
-  pointer-events: none;
-  width: fit-content;
-
-  border: 1px red solid;
-}
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
-.App-header {
-  background-color: #252E54;
-  background-image: url('./assets/github_header.gif');
-  background-repeat: no-repeat;
-  background-position: center;
-
-  display: flex;
-  /* flex-direction: column; */
-  align-items: center;
-  /* justify-content: center; */
-  font-size: calc(10px + 2vmin);
-  color: white;
-
-}
-
-.header-img {
-  width: auto;
-  height: 20vh;
-}
-
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-.App-footer {
-  bottom: 0;
-
-}
-
-
-/* -------------------------------- main.css -------------------------------- */
+@import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
+/*
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -213,7 +159,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		/* border-bottom: dotted 1px; */
+		border-bottom: dotted 1px;
 		text-decoration: none;
 	}
 
@@ -230,7 +176,7 @@ input, select, textarea {
 	}
 
 	p {
-		text-align: left;
+		text-align: justify;
 		margin: 0 0 2rem 0;
 	}
 
@@ -3001,7 +2947,6 @@ input, select, textarea {
 		header.major {
 			margin: 0 0 4rem 0;
 			text-align: center;
-      font-size: 16px;
 		}
 
 			header.major > :last-child {
@@ -3010,8 +2955,7 @@ input, select, textarea {
 
 			header.major > p {
 				margin-top: 0;
-				text-align: left;
-        text-indent: 50px;
+				text-align: center;
 			}
 
 			header.major > .date {
@@ -3024,7 +2968,7 @@ input, select, textarea {
 					display: block;
 					position: absolute;
 					top: 50%;
-					width: calc(50% - 12rem);
+					width: calc(50% - 6rem);
 					border-top: solid 2px;
 				}
 
@@ -3035,13 +2979,6 @@ input, select, textarea {
 				header.major > .date:after {
 					right: 0;
 				}
-      header.major > span > img.profpic {
-        width: 200px;
-        height: 200px;
-        margin-bottom: 60px;
-        border-radius: 50%;
-        object-fit: cover;
-      }
 
 		@media screen and (max-width: 980px) {
 
@@ -3297,7 +3234,7 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			background-color: #212931;
-			background-image: url("./assets/images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./assets/images/bg.jpg");
+			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
@@ -3348,7 +3285,7 @@ input, select, textarea {
 
 	#intro {
 		color: #ffffff;
-		padding: 2rem 4rem 6rem 4rem ;
+		padding: 8rem 4rem 6rem 4rem ;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -3372,9 +3309,8 @@ input, select, textarea {
 		position: relative;
 		cursor: default;
 		text-align: center;
-		z-index: 100;
+		z-index: 1;
 		min-height: 100vh;
-    border-radius: red solid 1px;
 	}
 
 		#intro input, #intro select, #intro textarea {
@@ -3809,7 +3745,6 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
-
 		@media screen and (max-width: 980px) {
 
 			#nav {
@@ -3831,6 +3766,7 @@ input, select, textarea {
 
 		#main > * {
 			padding: 4rem 4rem 2rem 4rem ;
+			border-top: solid 2px #eeeeee;
 			margin: 0;
 		}
 
@@ -3838,16 +3774,12 @@ input, select, textarea {
 				border-top: 0;
 			}
 
-      #main > *:last-child {
-        border-top: solid 2px #eeeeee;
-      }
-
 		#main > footer {
 			text-align: center;
 		}
 
 		#main > .post {
-			padding: 4rem 8rem 6rem 8rem ;
+			padding: 8rem 8rem 6rem 8rem ;
 		}
 
 			#main > .post header.major > .date {
@@ -3862,12 +3794,7 @@ input, select, textarea {
 
 			#main > .post.featured {
 				text-align: center;
-        padding: 0 8rem;
 			}
-
-      #main > .post.featured:first-child {
-        padding-top: 6rem;
-      }
 
 			@media screen and (max-width: 1280px) {
 
@@ -4042,7 +3969,7 @@ input, select, textarea {
 
 		#footer a {
 			color: #717981;
-			/* border-bottom-color: rgba(113, 121, 129, 0.5); */
+			border-bottom-color: rgba(113, 121, 129, 0.5);
 		}
 
 			#footer a:hover {
@@ -4191,7 +4118,7 @@ input, select, textarea {
 			border-top-color: #e2e2e2;
 		}
 
-    #footer ul.icons li a.icon:hover:before {
+		#footer ul.icons li a.icon:hover:before {
 			color: #18bfef;
 		}
 
@@ -4760,41 +4687,3 @@ input, select, textarea {
 		}
 
 	}
-
-
-
-/* -------------------------------- noscript.css -------------------------------- */
-/* Wrapper */
-
-#wrapper {
-  background-color: #212931;
-  background-image: url("./assets/images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./assets/images/bg.jpg");
-  background-size: auto,								auto,														100% auto;
-  background-position: center,								center,														top center;
-  background-repeat: repeat,								no-repeat,													no-repeat;
-  background-attachment: fixed,								fixed,														fixed;
-}
-
-  #wrapper.fade-in:before {
-    display: none;
-  }
-
-/* Intro */
-
-body.is-preload #intro {
-  opacity: 1;
-}
-
-  body.is-preload #intro:not(.hidden) + #header + #nav {
-    -moz-transform: none;
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
-    opacity: 1;
-  }
-
-
-/* ------------------------------- added css ------------------------------- */
-#av-logo {
-  width: 200px;
-}
