@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+  box-sizing: border-box;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.App-logo {
+  height: 15vmin;
+  pointer-events: none;
+  width: fit-content;
+
+  border: 1px red solid;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+.App-header {
+  background-color: #252E54;
+  background-image: url('./assets/github_header.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  /* justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+}
+
+.header-img {
+  width: auto;
+  height: 20vh;
+}
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.App-footer {
+  bottom: 0;
+  
+}
