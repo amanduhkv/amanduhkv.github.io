@@ -1,4 +1,5 @@
 import logo from './assets/av-portfolio.svg';
+import res from './assets/Vien_Amanda_Resume.pdf';
 
 import css from './assets/skills/css.svg';
 import docker from './assets/skills/docker.svg';
@@ -12,7 +13,7 @@ import js from './assets/skills/js.svg';
 import node from './assets/skills/node.svg';
 import postgresql from './assets/skills/postgresql.svg';
 import py from './assets/skills/py.svg';
-import react from './assets/skills/react.svg';
+import reacts from './assets/skills/react.svg';
 import redux from './assets/skills/redux.svg';
 
 import prof_pic from './assets/images/prof-pic.jpg';
@@ -86,23 +87,25 @@ function App() {
                 <span class="date"><h2>Skills</h2></span>
               </header>
               <div>
-                <div>
-                  <img id='skill' src={js} alt='skills' height='200px' />
-                  <img id='skill' src={py} alt='skills' height='200px' />
-                  <img id='skill' src={css} alt='skills' height='200px' />
-                  <img id='skill' src={html} alt='skills' height='200px' />
-                  <img id='skill' src={react} alt='skills' height='200px' />
-                  <img id='skill' src={redux} alt='skills' height='200px' />
-                  <img id='skill' src={ex} alt='skills' height='200px' />
-                  <img id='skill' src={node} alt='skills' height='200px' />
-                  <img id='skill' src={flask} alt='skills' height='200px' />
-                  <img id='skill' src={postgresql} alt='skills' height='200px' />
-                  <img id='skill' src={docker} alt='skills' height='200px' />
-                  <img id='skill' src={git} alt='skills' height='200px' />
-                  <img id='skill' src={github} alt='skills' height='200px' />
-                  <img id='skill' src={heroku} alt='skills' height='200px' />
+                <div id='skillsdiv'>
+                  <img id='skill' src={js} alt='skills' height='125px' />
+                  <img id='skill' src={py} alt='skills' height='125px' />
+                  <img id='skill' src={css} alt='skills' height='125px' />
+                  <img id='skill' src={html} alt='skills' height='125px' />
+                  <img id='skill' src={reacts} alt='skills' height='125px' />
+                  <img id='skill' src={redux} alt='skills' height='125px' />
+                  <img id='skill' src={ex} alt='skills' height='125px' />
+                  <img id='skill' src={node} alt='skills' height='125px' />
+                  <img id='skill' src={flask} alt='skills' height='125px' />
+                  <img id='skill' src={postgresql} alt='skills' height='125px' />
+                  <img id='skill' src={docker} alt='skills' height='125px' />
+                  <img id='skill' src={git} alt='skills' height='125px' />
+                  <img id='skill' src={github} alt='skills' height='125px' />
+                  <img id='skill' src={heroku} alt='skills' height='125px' />
                 </div>
               </div>
+              <br />
+              <br />
               <br />
               <br />
             </article>
@@ -224,14 +227,17 @@ function App() {
                 <h3>Email</h3>
                 <p>amandakvien@gmail.com</p>
               </section>
+
               <section>
                 {/* <h3>Social</h3> */}
                 <ul class="icons alt">
                   <li><a href="https://github.com/amanduhkv" target="_blank" rel="noopener noreferrer" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
                   <li><a href="https://www.linkedin.com/in/amandakvien/" target="_blank" rel="noopener noreferrer" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
                   <li><a href="https://angel.co/u/amanda-vien" target="_blank" rel="noopener noreferrer" class="icon brands fa-angellist"><span class="label">AngelList</span></a></li>
+                  <li><a href={res} target="_blank" rel="noopener noreferrer"><span class="label" id='resume'>Resume</span></a></li>
                 </ul>
               </section>
+
               <section class="alt"><a href='#'>Back to top</a></section>
             </section>
           </footer>
