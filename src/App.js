@@ -1,4 +1,20 @@
 import logo from './assets/av-portfolio.svg';
+
+import css from './assets/skills/css.svg';
+import docker from './assets/skills/docker.svg';
+import ex from './assets/skills/ex.svg';
+import flask from './assets/skills/flask.svg';
+import git from './assets/skills/git.svg';
+import github from './assets/skills/github.svg';
+import heroku from './assets/skills/heroku.svg';
+import html from './assets/skills/html.svg';
+import js from './assets/skills/js.svg';
+import node from './assets/skills/node.svg';
+import postgresql from './assets/skills/postgresql.svg';
+import py from './assets/skills/py.svg';
+import react from './assets/skills/react.svg';
+import redux from './assets/skills/redux.svg';
+
 import prof_pic from './assets/images/prof-pic.jpg';
 import behrbnb from './assets/images/behrbnb-splash.jpg';
 import squeal from './assets/images/squeal-splash.jpg';
@@ -64,6 +80,34 @@ function App() {
               </header>
               <a href="#" class="image main"><img src="./assets/images/pic01.jpg" alt="" /></a>
             </article>
+
+            <article class="post featured">
+              <header class="major">
+                <span class="date"><h2>Skills</h2></span>
+              </header>
+              <div>
+                <div>
+                  <img id='skill' src={js} alt='skills' height='200px' />
+                  <img id='skill' src={py} alt='skills' height='200px' />
+                  <img id='skill' src={css} alt='skills' height='200px' />
+                  <img id='skill' src={html} alt='skills' height='200px' />
+                  <img id='skill' src={react} alt='skills' height='200px' />
+                  <img id='skill' src={redux} alt='skills' height='200px' />
+                  <img id='skill' src={ex} alt='skills' height='200px' />
+                  <img id='skill' src={node} alt='skills' height='200px' />
+                  <img id='skill' src={flask} alt='skills' height='200px' />
+                  <img id='skill' src={postgresql} alt='skills' height='200px' />
+                  <img id='skill' src={docker} alt='skills' height='200px' />
+                  <img id='skill' src={git} alt='skills' height='200px' />
+                  <img id='skill' src={github} alt='skills' height='200px' />
+                  <img id='skill' src={heroku} alt='skills' height='200px' />
+                </div>
+              </div>
+              <br />
+              <br />
+            </article>
+
+
 
             <article class="post featured">
               <header class="major">
