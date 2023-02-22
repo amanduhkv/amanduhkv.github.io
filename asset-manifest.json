@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.01f522a8.css",
-    "main.js": "/static/js/main.fb7a5220.js",
+    "main.js": "/static/js/main.bcfbe542.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/prof-pic.jpg": "/static/media/prof-pic.2da00d1e39f9c533c903.jpg",
     "static/media/fa-solid-900.svg": "/static/media/fa-solid-900.7a8b4f130182d19a2d7c.svg",
@@ -23,7 +23,7 @@
     "static/media/docker.svg": "/static/media/docker.5c24ffcee358b0372e70ce47fb829ca7.svg",
     "static/media/github.svg": "/static/media/github.4089c49225f9a7ec6362d0e0989b0b29.svg",
     "static/media/bg.jpg": "/static/media/bg.dcb0f2f855e2411114f1.jpg",
-    "static/media/Vien_Amanda_Resume.pdf": "/static/media/Vien_Amanda_Resume.0535d1ae6d77326db384.pdf",
+    "static/media/Vien_Amanda_Resume.pdf": "/static/media/Vien_Amanda_Resume.034ea104db11b2f3881d.pdf",
     "static/media/git.svg": "/static/media/git.78172b2795b6dfe07b23381feccba7ab.svg",
     "static/media/ex.svg": "/static/media/ex.bea75a672038214a530c34fe590d7fd5.svg",
     "static/media/fa-regular-400.eot": "/static/media/fa-regular-400.77206a6bb316fa0aded5.eot",
@@ -42,11 +42,11 @@
     "static/media/heroku.svg": "/static/media/heroku.e86e70a4438dd2c722d93b530d290d33.svg",
     "index.html": "/index.html",
     "main.01f522a8.css.map": "/static/css/main.01f522a8.css.map",
-    "main.fb7a5220.js.map": "/static/js/main.fb7a5220.js.map",
+    "main.bcfbe542.js.map": "/static/js/main.bcfbe542.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.01f522a8.css",
-    "static/js/main.fb7a5220.js"
+    "static/js/main.bcfbe542.js"
   ]
 }
