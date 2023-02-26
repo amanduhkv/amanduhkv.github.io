@@ -1,0 +1,53 @@
+@media (max-width: 1030px) {
+  .prof {
+    height: 40vmin;
+  }
+}
+
+@media (max-width: 1060px) {
+  .App-header {
+    display: none;
+  }
+
+  .App-body {
+    padding-left: 1em;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%
+  }
+
+  .about-me, .intro section {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .proj-text {
+    left: 0;
+    height: 30vmin;
+    width: 80vmin;
+
+    font-size: xx-small;
+    background-color: #313F52;
+    opacity: 80%;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #proj-title {
+    color: #71859f;
+  }
+
+  #proj-desc {
+    background-color: transparent;
+  }
+
+}

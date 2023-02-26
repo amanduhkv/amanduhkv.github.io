@@ -25,6 +25,7 @@ import squeal from './assets/images/squeal-splash.jpg';
 import slate from './assets/images/slate-splash.jpg';
 
 import './App.css';
+import './media.css';
 import reveal from './scroll';
 
 function App() {
@@ -109,10 +110,10 @@ function App() {
                 </div>
               </section>
               <section>
-                <a href='https://squeal-yelp.herokuapp.com/' className='proj-photo-alt'>
-                  <img src={squeal} alt='behrbnb' />
+                <a href='https://squeal-yelp.herokuapp.com/' className='proj-photo'>
+                  <img src={squeal} alt='behrbnb' className='proj-photo' />
                 </a>
-                <div className='proj-text-alt'>
+                <div className='proj-text'>
                   <h3 id='proj-title'>Squeal</h3>
                   <p id='proj-desc'>
                     A 4-team project inspired by Yelp, allowing users to search for a list of food choices and restaurants based on names, location, category, or review.
