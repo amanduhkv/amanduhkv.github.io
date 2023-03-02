@@ -27,15 +27,38 @@ import slate from './assets/images/slate-splash.jpg';
 import './App.css';
 import './media.css';
 import reveal from './scroll';
+import hide from './scrollSmallerScreen';
+import { useState, useEffect } from 'react';
 
 function App() {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const openMenu = () => {
+    if (!showMenu) setShowMenu(showMenu);
+    setShowMenu(!showMenu);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
         <a href='#'>
           <img src={logo} className="App-logo" alt="logo" />
         </a>
-        <section>
+        <div id='hamburger' onClick={openMenu}>
+          <svg xmlns="http://www.w3.org/2000/svg" fill='white' viewBox="0 0 24 24"><path d="M5.75 5.25h12.5a.75.75 0 1 1 0 1.5H5.75a.75.75 0 0 1 0-1.5zm0 6h12.5a.75.75 0 1 1 0 1.5H5.75a.75.75 0 1 1 0-1.5zm0 6h12.5a.75.75 0 1 1 0 1.5H5.75a.75.75 0 1 1 0-1.5z"></path></svg>
+        </div>
+        {showMenu && (
+            <section className='hamburger-section'>
+              <ul>
+                <li><a href='#about-me'>About</a></li>
+                <li><a href='#projects'>Projects</a></li>
+                <li><a href='#skills'>Skills</a></li>
+                <li><a href='#contact-info'>Contact</a></li>
+                <li><a href={res} target="_blank" rel="noopener noreferrer"><span class="label" id='resume'>Resume</span></a></li>
+              </ul>
+            </section>
+        )}
+        <section className='menu-show'>
           <ul>
             <li><a href='#about-me'>About</a></li>
             <li><a href='#projects'>Projects</a></li>
@@ -44,7 +67,7 @@ function App() {
             <li><a href={res} target="_blank" rel="noopener noreferrer"><span class="label" id='resume'>Resume</span></a></li>
           </ul>
         </section>
-        <section>
+        <section className='menu-show'>
           <ul class="icons alt">
             <li><a href="https://github.com/amanduhkv" target="_blank" rel="noopener noreferrer" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
             <li><a href="https://www.linkedin.com/in/amandakvien/" target="_blank" rel="noopener noreferrer" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
@@ -95,7 +118,7 @@ function App() {
                 <a href='https://slate-canva.herokuapp.com/' className='proj-photo'>
                   <img src={slate} alt='slate' className='proj-photo' />
                 </a>
-                <div className='proj-text'>
+                <div className='proj-text' id='slate'>
                   <h3 id='proj-title'>Slate</h3>
                   <p id='proj-desc'>
                     A web application, inspired by Canva, allowing users to have an easy-to-use graphic design tool at their fingertips.
@@ -113,7 +136,7 @@ function App() {
                 <a href='https://squeal-yelp.herokuapp.com/' className='proj-photo'>
                   <img src={squeal} alt='behrbnb' className='proj-photo' />
                 </a>
-                <div className='proj-text'>
+                <div className='proj-text' id='squeal'>
                   <h3 id='proj-title'>Squeal</h3>
                   <p id='proj-desc'>
                     A 4-team project inspired by Yelp, allowing users to search for a list of food choices and restaurants based on names, location, category, or review.
@@ -134,7 +157,7 @@ function App() {
                 <a href='https://behrbnb.herokuapp.com/' className='proj-photo'>
                   <img src={behrbnb} alt='behrbnb' className='proj-photo' />
                 </a>
-                <div className='proj-text'>
+                <div className='proj-text' id='behrbnb'>
                   <h3 id='proj-title'>Behrbnb</h3>
                   <p id='proj-desc'>
                     A listing website inspired by Airbnb, dedicated to allowing users to upload and review listings. I learned how to create a full-stack application for the first time.
@@ -185,11 +208,17 @@ function App() {
               I'm currently looking for a <span>frontend software developer</span> role, and would love to continue my journey with you!
             </p>
           </section>
-          <section>
+          <section className='socials'>
             <a href="mailto: amandakvien@gmail.com" target="_blank" rel="noopener noreferrer" id='contact-icons' className="fa-solid fa-envelope"></a>
             <a href="https://www.linkedin.com/in/amandakvien/" target="_blank" rel="noopener noreferrer" id='contact-icons' className="icon brands fa-linkedin-in"></a>
+            <a href="https://github.com/amanduhkv" target="_blank" rel="noopener noreferrer" id='contact-icons' class="icon brands fa-github"></a>
+            <a href="https://angel.co/u/amanda-vien" target="_blank" rel="noopener noreferrer" id='contact-icons' class="icon brands fa-angellist"></a>
+          </section>
+          <section className='res-container'>
+            <a href={res} target="_blank" rel="noopener noreferrer"><span class="label" id='resume-bottom'>Resume</span></a>
           </section>
         </div>
+        <a className="back-up" href="#">Back to Top</a>
       </body>
     </div>
   );

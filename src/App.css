@@ -164,6 +164,10 @@ img {
 }
 
 /* -------------------- DIFF SECTIONS -------------------- */
+#hamburger {
+  display: none;
+}
+
 .intro, .about-me, .skills, .projects, .contact-info {
   display: flex;
   align-items: center;
@@ -248,7 +252,7 @@ img {
 .proj-text, .proj-text-alt {
   position: absolute;
   left: 50%;
-  max-width: 50vmin;
+  /* max-width: 50vmin; */
   text-align: right;
 
   display: flex;
@@ -361,4 +365,12 @@ img {
 #contact-icons {
   font-size: 4vmin;
   margin: 0 .5em;
+}
+
+#resume-bottom {
+  display: none;
+}
+
+.back-up{
+  display: none;
 }
