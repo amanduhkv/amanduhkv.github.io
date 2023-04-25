@@ -3,7 +3,7 @@ import prof from './assets/images/wave.png';
 import mid from './assets/images/middle.JPG';
 import out from './assets/images/outro.png';
 
-import res from './assets/Vien_Amanda_Resume.pdf';
+import res from './assets/amandavien_Resume.pdf';
 
 import css from './assets/skills/css.svg';
 import docker from './assets/skills/docker.svg';
